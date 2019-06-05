@@ -1,9 +1,19 @@
+html {
+    background-image: url('bulldog.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
 
 
 nav ul {
-    color: red;
     list-style-type: none;
     display: flex;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 0;
     
 }
 
@@ -13,20 +23,17 @@ li {
     
 }
 
-ul {
-    margin-left: 1
-}
 
 
-span.me {
+
+span {
     color: red;
 }
 
-span.adopt {
-    color: red;
+.items {
+    color: green;
+    margin-top: 200px;
+    
 }
 
-body {
-    background-image: image(bulldo
-}
 
