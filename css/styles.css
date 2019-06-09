@@ -1,39 +1,158 @@
+
 html {
-    background-image: url('bulldog.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
+  background-color: #F0ECEE;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 24px 12px 0 15px;
 }
 
+
+body nav ul {
+  padding: 0;
+  margin: 0;
+}
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    float: right;
-    position: fixed;
-    right: 0;
-    top: 0;
-    
+  display: flex;
+  flex-direction: column;
+
+
 }
 
-li {
-    margin: 10px;
-    display: flex;
-    
+.logo {
+  color: black;
+  font-weight: 600;
+  padding-right: 200px;
+  padding-bottom: 25px;
+  font-size: 22px;
+  text-decoration: none;
 }
 
+}
 
+.navbar {
+  padding-top: 80px;
+  margin-top: 40px;
 
+}
 
 span {
-    color: red;
-}
-
-.items {
-    color: green;
-    margin-top: 200px;
-    
+  color: #FF4850;
 }
 
 
+
+.button1 {
+
+/*
+  color: red;
+  width: auto;
+  background-color: #FF4850;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  position: relative;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+*/
+
+
+  width: auto;
+  background-color: #FF4850;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  color: white;
+
+
+}
+
+#btn1 {
+  color: white !important;
+}
+
+
+
+
+
+
+
+.button2 {
+  color: red;
+  width: auto;
+  background-color: #FF4850;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+nav ul li a {
+  color: #88898B;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 10px;
+
+
+
+}
+
+
+
+.nav-items {
+  list-style-type: none;
+  color: #88898B;
+}
+
+.p1 {
+  font-size: 2em;
+  font-weight: 600;
+  width: 300px;
+}
+
+.p2 {
+  color: #88898B;
+}
+
+
+
+
+
+@media only screen and (min-width:768px){
+  nav ul{
+    flex-direction:row;
+    justify-content:space-between;
+  }
+
+}
+
+@media only screen and (min-width:900px){
+  body{
+
+    margin: 0 auto;
+  }
+
+  html{
+    background-image: url("bulldog.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .button1 {
+    position: relative;
+    bottom: 20px;
+  }
+}
