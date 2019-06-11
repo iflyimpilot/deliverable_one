@@ -3,7 +3,9 @@ html {
   background-color: #F0ECEE;
   font-family: 'Fira Sans', sans-serif;
   margin: 24px 12px 0 15px;
+
 }
+
 
 
 body nav ul {
@@ -15,24 +17,35 @@ nav ul {
   display: flex;
   flex-direction: column;
 
+}
+
+nav li {
+  margin-left: 2px;
+}
+
+
+nav ul li a {
+  color: #88898B;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 10px;
 
 }
+
+
 
 .logo {
   color: black;
   font-weight: 600;
-  padding-right: 200px;
   padding-bottom: 25px;
+  margin-right: 200px;
   font-size: 22px;
   text-decoration: none;
-}
 
 }
 
-.navbar {
-  padding-top: 80px;
-  margin-top: 40px;
-
+.nav-items {
+  list-style-type: none;
 }
 
 span {
@@ -43,80 +56,58 @@ span {
 
 .button1 {
 
-/*
-  color: red;
-  width: auto;
-  background-color: #FF4850;
-  border: none;
-  border-radius: 15px;
-  color: white;
-  padding: 15px 32px;
-  position: relative;
-  font-size: 18px;
-  margin: 4px 2px;
-  cursor: pointer;
-*/
-
-
   width: auto;
   background-color: #FF4850;
   border: none;
   border-radius: 15px;
   padding: 10px;
-  position: relative;
-  bottom: 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 0;
   color: white;
-
-
 }
-
-#btn1 {
-  color: white !important;
-}
-
-
-
-
 
 
 
 .button2 {
-  color: red;
-  width: auto;
+
+  width: 100%;
   background-color: #FF4850;
   border: none;
   border-radius: 15px;
-  color: white;
-  padding: 15px 32px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
-
-}
-
-nav ul li a {
-  color: #88898B;
-  display: block;
-  text-decoration: none;
-  padding-bottom: 10px;
-
-
+  color: white;
 
 }
 
 
 
-.nav-items {
-  list-style-type: none;
-  color: #88898B;
+a:hover {
+
+  color: #FF4850;
+
 }
+
+.button1:hover {
+  background-color: #CCC;
+  color: #FF4850;
+
+}
+
+.button2:hover {
+  background-color: #CCC;
+  color: #FF4850;
+
+}
+
+
 
 .p1 {
   font-size: 2em;
@@ -132,15 +123,9 @@ nav ul li a {
 
 
 
+
+
 @media only screen and (min-width:768px){
-  nav ul{
-    flex-direction:row;
-    justify-content:space-between;
-  }
-
-}
-
-@media only screen and (min-width:900px){
   body{
 
     margin: 0 auto;
@@ -148,11 +133,39 @@ nav ul li a {
 
   html{
     background-image: url("bulldog.jpg");
+    background-color: #F0ECEE;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    padding: 15px 15px;
   }
+
+  nav ul{
+    flex-direction:row;
+    justify-content: space-between;
+
+  }
+
+
   .button1 {
     position: relative;
     bottom: 20px;
   }
-}
+
+  .button2 {
+    width: auto;
+  }
+
+
+
+  .p1 {
+    width: 500px;
+  }
+
+  .p2 {
+    width: 450px;
+  }
+
+  .middle {
+    position: relative;
+    top: 200px;
+  }
